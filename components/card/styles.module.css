@@ -1,0 +1,26 @@
+.card_wrapper {
+  border: 2px solid lightgray;
+  border-radius: 9px;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.card_wrapper:hover {
+  border-color: #000;
+}
+
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.img_wrapper img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  object-fit: contain;
+}

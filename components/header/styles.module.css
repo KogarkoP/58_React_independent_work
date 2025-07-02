@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: black;
+}
+
+.header .logo {
+  color: white;
+  rotate: 25deg;
+  letter-spacing: 2px;
+  font-size: 27px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  color: #fff;
+}

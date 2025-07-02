@@ -6,6 +6,7 @@ import Main from "../components/main/main";
 
 const MainPage = () => {
   const [characters, setCharacters] = useState([]);
+  const [loading, setLoading] = useState(true);
   const linksArray = [
     { link: "/home", title: "Home" },
     { link: "/about", title: "About" },
@@ -18,6 +19,7 @@ const MainPage = () => {
     );
 
     setCharacters(response.data);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -27,7 +29,7 @@ const MainPage = () => {
   return (
     <>
       <Header linksArray={linksArray} />
-      <Main characters={characters} />
+      <Main characters={characters} loading={loading} />
     </>
   );
 };

@@ -2,8 +2,10 @@ import styles from "./styles.module.css";
 
 const Header = ({ linksArray }) => {
   return (
-    <div>
-      <div className={styles.logo}></div>
+    <div className={styles.header}>
+      <div className={styles.logo}>
+        <a href="http://localhost:3000/">Harry Potter</a>
+      </div>
       <ul>
         {linksArray.map((l) => {
           return (
